@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --dark-purple: #414f6b;
+    --light-purple: #647593;
+    --light: #b0b4be;
+    --dark: #4d4d4d;
+}
+
+p {
+    margin: 0 !important;
+}
+
+/* HEADER */
+
+.nav img {
+    width: 50px;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url(Assets/bg-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: inset(0 0 0 25%);
+    overflow: hidden;
+    display: block;
+    clip-path: inset(0 0 0 calc(50% - 800px))}
+
+.nav-links__hero a, .nav-links a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: white;
+    font-style: italic;
+    margin-left: 50px;
+}
+
+/* HEADER END */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px;
+    border: 1px solid var(--light);
+    border-radius: 50%;
+}
+
+.logo-container p {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: left;
+    line-height: 20px;
+    margin-left: 10px !important;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.logo-container p:nth-child(2) {
+    color: var(--dark-purple);
+    margin-left: 10px !important;
+    letter-spacing: 0.7px;
+}
+
+.nav h1:nth-child(3) {
+    color: var(--dark-purple)
+}
+
+.nav-links a {
+    color: var(--dark-purple)
+}
+
+/* History Section */
+
+#history {
+    background-image: url(Assets/bg-01.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.history-heading h2{
+    font-size: 150px;
+    color: var(--dark-purple);
+}
+
+.history-heading {
+    position: relative;
+    width: fit-content;
+}
+
+ .history-heading h6 {
+    position: absolute;
+    bottom: 40px;
+    font-size: 25px;
+    right: -60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--dark-purple);
+}
+
+.history-parahraph {
+    text-align: left;
+    margin-left: 100px;
+    margin-top: -30px;
+}
+
+.history-parahraph p {
+    margin: 0;
+}
+
+/* Carousel */
+
+.carousel {
+    width: 100%;
+    background-color: rgba(55 , 68, 90, 0.5);    
+    height: auto;
+    bottom: 0;
+    position: absolute;
+    padding: 30px;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    width: 100%;
+  }
+  
+  .carousel .container .row {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .carousel .container .row .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #bbb;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel .circle.active {
+    background-color: #717171;
+  }
+  
+/* Carousel End */
+  
+
+/* History Section End */
+
+/* Team Section */
+
+.team-heading {
+    position: relative;
+    width: fit-content;
+}
+
+.team-heading > h2 {
+    color: var(--light);
+    font-size: 150px;
+}
+
+.team-heading > h6 {
+    right: -40px !important;
+    position: absolute;
+    bottom: 50px;
+    font-size: 25px;
+    right: -60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--dark-purple);
+}
+
+.team-heading__paragraph {
+    margin-left: 80px;
+}
+
+.mountain-nav {
+    width: 100%;
+    background-color: var(--dark-purple);
+    height: auto;
+}
+
+.mountain-nav__links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--light);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 0px 20px;
+}
+
+.mountain-nav__links a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+    background-color: var(--light);
+    color: var(--dark-purple);
+}
+
+.mountain-content {
+    background-image: url(Assets/team-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    width: 100%;
+}
+
+ .schedule-box {
+    background-color: rgba(242, 244, 247, 0.5);
+    padding: 30px;
+    height: auto;
+    max-width: 350px;
+    width: 100%;
+    top: 100px;
+    left: 180px;
+    font-size: 16px;
+    position: absolute;
+}
+
+.schedule-box h6 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--dark-purple);
+
+} 
+
+/* Team Section End */
+
+/* Footer */
+
+footer {
+    height: 65px;
+    width: 100%;
+    background-color: var(--dark-purple);    
+}
+
+.footer-logo img {
+    width: 30px;
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(99, 118, 157, 0.5); 
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-logo p {
+    color: var(--light-purple);
+    text-transform: uppercase;
+    line-height: 20px;
+    margin-left: 10px !important;
+}
+
+.copyright p {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--light-purple);
+}
+
+/* Footer end */
+
+
+@media screen and (max-width: 768px) {
+    .carousel .container .row .col-md-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      margin-bottom: 10px;
+    }
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .schedule-box {
+        position: inherit;
+    }
+    .history-parahraph {
+        margin: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .team {
+        flex-direction: column;
+    }
+    .team-heading__paragraph {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 382px) {
+    footer > div{
+        flex-direction: column;
+        padding: 30px;
+    }
+    footer {
+        height: auto;
+    }
+  }
